@@ -134,15 +134,21 @@ namespace ApachePathSwitch
 
                 using (StreamWriter writer = new StreamWriter(caminhoConf))
                 {
+                    bool edita = false;
+
                     foreach (string line in lines)
                     {
                         if (line.ToString().StartsWith("DocumentRoot"))
                         {
                             writer.WriteLine($"DocumentRoot \"{caminhoProjeto}\"");
+
+                            edita = true;
                         }
-                        else if (line.ToString().StartsWith("<Directory"))
+                        else if (edita)
                         {
                             writer.WriteLine($"<Directory \"{caminhoProjeto}\">");
+
+                            edita = false;
                         }
                         else
                         {
