@@ -16,6 +16,7 @@ namespace ApachePathSwitch
     {
         #region Parâmetros
 
+        private string porta;
         private string projeto;
         private string caminhoXampp;
         private string caminhoProjetos;
@@ -77,6 +78,10 @@ namespace ApachePathSwitch
 
                         writer.WriteStartElement("CaminhoProjetos");
                         writer.WriteString(caminhoProjetos);
+                        writer.WriteEndElement();
+
+                        writer.WriteStartElement("Porta");
+                        writer.WriteString(porta);
                         writer.WriteEndElement();
 
                         writer.WriteEndDocument();
@@ -167,7 +172,8 @@ namespace ApachePathSwitch
 
         private bool ValidaCampos() => !string.IsNullOrWhiteSpace(txtXampp.Text)
                                     && !string.IsNullOrWhiteSpace(txtProjetos.Text)
-                                    && !string.IsNullOrWhiteSpace(cmbProjetos.Text);
+                                    && !string.IsNullOrWhiteSpace(cmbProjetos.Text)
+                                    && !string.IsNullOrWhiteSpace(txtPorta.Text);
 
         private string SelecionaPasta()
         {
@@ -211,8 +217,10 @@ namespace ApachePathSwitch
 
         private void BtnSalvar_Click(object sender, EventArgs e)
         {
+            System.Diagnostics.Process.Start($"{caminhoXampp}/apache_stop.bat");
             SalvaCaminho();
             SalvaXML();
+            System.Diagnostics.Process.Start($"http://localhost:{porta}");
         }
 
         private void CmbProjetos_SelectedIndexChanged(object sender, EventArgs e)
