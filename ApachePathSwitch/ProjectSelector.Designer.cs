@@ -38,8 +38,6 @@
             this.btnXampp = new System.Windows.Forms.Button();
             this.txtXampp = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txtPorta = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -47,7 +45,7 @@
             // btnSalvar
             // 
             this.btnSalvar.Enabled = false;
-            this.btnSalvar.Location = new System.Drawing.Point(290, 147);
+            this.btnSalvar.Location = new System.Drawing.Point(290, 119);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(75, 23);
             this.btnSalvar.TabIndex = 0;
@@ -82,7 +80,7 @@
             // 
             this.cmbProjetos.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbProjetos.FormattingEnabled = true;
-            this.cmbProjetos.Location = new System.Drawing.Point(135, 120);
+            this.cmbProjetos.Location = new System.Drawing.Point(135, 92);
             this.cmbProjetos.Name = "cmbProjetos";
             this.cmbProjetos.Size = new System.Drawing.Size(230, 21);
             this.cmbProjetos.TabIndex = 3;
@@ -91,7 +89,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(86, 123);
+            this.label1.Location = new System.Drawing.Point(86, 95);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(43, 13);
             this.label1.TabIndex = 4;
@@ -117,40 +115,22 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.txtPorta);
-            this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.txtXampp);
             this.groupBox1.Controls.Add(this.btnXampp);
             this.groupBox1.Controls.Add(this.txtProjetos);
             this.groupBox1.Controls.Add(this.btnProjetos);
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(362, 102);
+            this.groupBox1.Size = new System.Drawing.Size(362, 74);
             this.groupBox1.TabIndex = 5;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Configurações";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(82, 75);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(35, 13);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Porta:";
-            // 
-            // txtPorta
-            // 
-            this.txtPorta.Location = new System.Drawing.Point(123, 72);
-            this.txtPorta.Name = "txtPorta";
-            this.txtPorta.Size = new System.Drawing.Size(100, 20);
-            this.txtPorta.TabIndex = 4;
             // 
             // ProjectSelector
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(387, 184);
+            this.ClientSize = new System.Drawing.Size(387, 154);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.cmbProjetos);
@@ -180,8 +160,6 @@
         private System.Windows.Forms.TextBox txtXampp;
         private System.Windows.Forms.Button btnXampp;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox txtPorta;
-        private System.Windows.Forms.Label label2;
     }
 }
 
