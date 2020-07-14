@@ -12,7 +12,7 @@ using System.Xml;
 
 namespace ApachePathSwitch
 {
-    public partial class ProjectSelector : Form
+    public partial class FrmMain : Form
     {
         #region Parâmetros
 
@@ -24,7 +24,7 @@ namespace ApachePathSwitch
 
         #region Construtor
 
-        public ProjectSelector()
+        public FrmMain()
         {
             InitializeComponent();
         }
@@ -38,8 +38,7 @@ namespace ApachePathSwitch
             txtXampp.Text = string.IsNullOrWhiteSpace(caminhoXampp) ? string.Empty : caminhoXampp;
             txtProjetos.Text = string.IsNullOrWhiteSpace(caminhoProjetos) ? string.Empty : caminhoProjetos;
 
-            if (ValidaCampos())
-                btnSalvar.Enabled = true;
+            btnSalvar.Enabled = ValidaCampos();
         }
 
         private void PreencheComboBox()

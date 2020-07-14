@@ -16,7 +16,7 @@ namespace ApachePathSwitch
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new ProjectSelector());
+            Application.Run(new FrmMain());
         }
     }
 }

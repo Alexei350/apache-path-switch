@@ -82,6 +82,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FrmConfigXampp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmConfigXampp.Designer.cs">
+      <DependentUpon>FrmConfigXampp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\ConfigLocal.cs" />
     <Compile Include="ProjectSelector.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -90,6 +97,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmConfigXampp.resx">
+      <DependentUpon>FrmConfigXampp.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ProjectSelector.resx">
       <DependentUpon>ProjectSelector.cs</DependentUpon>
     </EmbeddedResource>
@@ -134,6 +144,27 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\accept.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maximize.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimize.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\settings.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
