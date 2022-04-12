@@ -88,20 +88,20 @@
     <Compile Include="FrmConfigXampp.Designer.cs">
       <DependentUpon>FrmConfigXampp.cs</DependentUpon>
     </Compile>
-    <Compile Include="Model\ConfigLocal.cs" />
-    <Compile Include="ProjectSelector.cs">
+    <Compile Include="FrmMain.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ProjectSelector.Designer.cs">
-      <DependentUpon>ProjectSelector.cs</DependentUpon>
+    <Compile Include="FrmMain.Designer.cs">
+      <DependentUpon>FrmMain.cs</DependentUpon>
     </Compile>
+    <Compile Include="Model\ConfigLocal.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FrmConfigXampp.resx">
       <DependentUpon>FrmConfigXampp.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ProjectSelector.resx">
-      <DependentUpon>ProjectSelector.cs</DependentUpon>
+    <EmbeddedResource Include="FrmMain.resx">
+      <DependentUpon>FrmMain.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
